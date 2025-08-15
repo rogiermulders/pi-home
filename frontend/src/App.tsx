@@ -9,6 +9,7 @@ import {UserContextProvider} from "./contexts/UserContext.tsx";
 
 
 import "./index.css"
+import PageLogin from "./pages/auth/PageLogin.tsx";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                     <BrowserRouter>
                         <Routes>
                             <Route path="/" element={<PageIndex/>}/>
+                            <Route path="/login" element={<PageLogin />} />
                         </Routes>
                     </BrowserRouter>
                 </PrimeReactProvider>
