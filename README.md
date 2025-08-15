@@ -1,1 +1,1 @@
-# rpi-home
+# pi-home
