@@ -14,10 +14,9 @@ export default function MtgMenu() {
   const Logo = () => {
     return (
       <div
-        className="font-bolder mr-2 flex items-center justify-center rounded-md px-3 py-2 text-center text-3xl"
-        style={{ backgroundColor: '#98C130' }}
+        className="font-bolder mr-2 flex items-center justify-center rounded-md px-3 py-2 text-center text-3xl bg-purple-900 text-gray-200"
       >
-        MTG
+        Rogier zijn huis
       </div>
     )
   }
