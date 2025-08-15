@@ -62,7 +62,8 @@ export default function PageLogin() {
     return (
         <LayoutDefault legend="Login">
             <Card
-                className="debby"
+
+                className="w-1/2 mx-auto mt-8"
                 footer={
                     <Button
                         label="Login"
@@ -79,7 +80,7 @@ export default function PageLogin() {
 
                 <form>
                     <div className="grid">
-                        <div className="col-12">
+                        <div className="col-1">
                             <div className="p-inputgroup">
                                 <div className="p-inputgroup-addon">
                                     <i className="pi pi-user"></i>
@@ -95,7 +96,7 @@ export default function PageLogin() {
                                 />
                             </div>
                         </div>
-                        <div className="col-12">
+                        <div className="col-1 mt-4">
                             <div className="p-inputgroup">
                                 <div className="p-inputgroup-addon">
                                     <i className="pi pi-lock"></i>
