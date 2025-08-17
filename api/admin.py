@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Pins
+from .models import Pin
 
-admin.site.register(Pins)
+admin.site.register(Pin)

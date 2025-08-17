@@ -1,8 +1,7 @@
-# api/serializers.py
 from rest_framework import serializers
-from .models import Pins
+from .models import Pin
 
-class PinsSerializer(serializers.ModelSerializer):
+class PinSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Pins
+        model = Pin
         fields = '__all__'

@@ -1,6 +1,6 @@
 from django.db import models
 
-class Pins(models.Model):
+class Pin(models.Model):
     pin = models.IntegerField()
     name = models.CharField(max_length=10, blank=True, null=True)
     function = models.CharField(max_length=100, blank=True, null=True)
