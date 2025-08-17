@@ -7,6 +7,7 @@ import {UserContextProvider} from "./contexts/UserContext.tsx";
 import "./index.css"
 import PageLogin from "./pages/auth/PageLogin.tsx";
 import PageHome from "./pages/PageHome.tsx";
+import PageLightning from "./pages/PageLightning.tsx";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
                             <Route path="/" element={<PageIndex/>}/>
                             <Route path="/login" element={<PageLogin />} />
                             <Route path="/home" element={<PageHome />} />
+                            <Route path="/lightning" element={<PageLightning />} />
                         </Routes>
                     </BrowserRouter>
                 </PrimeReactProvider>

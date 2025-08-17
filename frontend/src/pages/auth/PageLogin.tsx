@@ -7,10 +7,9 @@ import {Messages} from 'primereact/messages'
 import storeUser from '../../services/storeUser'
 import axios from 'axios'
 import {LayoutDefault} from '../../layouts/LayoutDefault.tsx'
-import {useNavigate} from "react-router";
 
 export default function PageLogin() {
-    
+
     const messages = useRef<Messages>(null)
 
     const [state, setState] = useState({
@@ -53,7 +52,7 @@ export default function PageLogin() {
             >
                 {import.meta.env.VITE_APP_ENV !== 'PROD' && (
                     <div className="p-2 text-center">
-                        <p>{import.meta.env.VITE_APP_ENV}</p>
+                        <p>{import.meta.env.MODE}</p>
                     </div>
                 )}
 

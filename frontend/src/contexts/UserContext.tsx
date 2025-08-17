@@ -56,7 +56,7 @@ const UserContextProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   const isLoggedIn = () => {
-    return !!sessionStorage.getItem('api_token')
+    return !!sessionStorage.getItem('access')
   }
 
   const changeLocale = (locale: string) => {
