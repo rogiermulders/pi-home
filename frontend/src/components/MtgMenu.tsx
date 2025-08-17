@@ -40,6 +40,7 @@ export default function MtgMenu() {
         menuItems.push(
             entry('Home', 'home', '/home'),
             entry('Verlichting', 'circle', '/lightning'),
+            entry('Login', '', '/login'),
         )
 
         return menuItems

@@ -1,0 +1,40 @@
+1	3.3V	3.3V power supply
+2	5V	5V power supply
+3	GPIO 2	I2C1 SDA (Data Line)
+4	5V	5V power supply
+5	GPIO 3	I2C1 SCL (Clock Line)
+6	Ground	Ground
+7	GPIO 4	General-purpose input/output
+8	GPIO 14	UART TXD (Transmit Data)
+9	Ground	Ground
+10	GPIO 15	UART RXD (Receive Data)
+11	GPIO 17	General-purpose input/output
+12	GPIO 18	PCM_CLK (Pulse Code Modulation Clock)
+13	GPIO 27	General-purpose input/output
+14	Ground	Ground
+15	GPIO 22	General-purpose input/output
+16	GPIO 23	General-purpose input/output
+17	3.3V	3.3V power supply
+18	GPIO 24	General-purpose input/output
+19	GPIO 10	SPI0 MOSI (Master Out, Slave In)
+20	Ground	Ground
+21	GPIO 9	SPI0 MISO (Master In, Slave Out)
+22	GPIO 25	General-purpose input/output
+23	GPIO 11	SPI0 SCLK (Clock Line)
+24	GPIO 8	SPI0 CE0 (Chip Enable 0)
+25	Ground	Ground
+26	GPIO 7	SPI0 CE1 (Chip Enable 1)
+27	GPIO 0	I2C EEPROM Data Line / ID_SD
+28	GPIO 1	I2C EEPROM Clock Line / ID_SC
+29	GPIO 5	General-purpose input/output
+30	Ground	Ground
+31	GPIO 6	General-purpose input/output
+32	GPIO 12	PWM (Pulse Width Modulation)
+33	GPIO 13	PWM (Pulse Width Modulation)
+34	Ground	Ground
+35	GPIO 19	PCM_FS (Frame Sync for Pulse Code Modulation)
+36	GPIO 16	General-purpose input/output
+37	GPIO 26	General-purpose input/output
+38	GPIO 20	PCM_DIN (Data In for Pulse Code Modulation)
+39	Ground	Ground
+40	GPIO 21	PCM_DOUT (Data Out for Pulse Code Modulation)
