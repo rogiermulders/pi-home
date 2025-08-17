@@ -7,47 +7,26 @@ import {Messages} from 'primereact/messages'
 import storeUser from '../../services/storeUser'
 import axios from 'axios'
 import {LayoutDefault} from '../../layouts/LayoutDefault.tsx'
+import {useNavigate} from "react-router";
 
 export default function PageLogin() {
-
-
+    
     const messages = useRef<Messages>(null)
 
     const [state, setState] = useState({
-        email: '',
+        username: '',
         password: '',
-        svg: '',
-        secret: '',
-        step: '',
-        two_fa: '',
     })
-
 
     const submit = (two_fa?: any) => {
         const data = two_fa ? {...state, two_fa} : {...state}
 
         axios
-            .post(import.meta.env.VITE_APP_API + '/auth/login', data)
+            .post(import.meta.env.VITE_APP_API + '/token/', data)
             .then(res => {
-                switch (res.data.step) {
-                    case 'success':
-                        storeUser(res.data)
-                        document.location.href = `/webshops`
-                        break
-                    case 'create_two_fa_secret':
-                        setState({
-                            ...state,
-                            svg: res.data.svg,
-                            secret: res.data.secret,
-                            step: res.data.step,
-                        })
-
-                        break
-                    case 'check_two_fa':
-                        setState({...state, step: res.data.step})
-                        break
-                    default:
-                }
+                storeUser(res.data)
+                // !NOT use navigate here! Need to reload the page for the user context to be updated
+                document.location.href = '/home'
             })
             .catch(() => {
                 messages.current?.show({
@@ -87,12 +66,11 @@ export default function PageLogin() {
                                 </div>
                                 <InputText
                                     autoFocus
-                                    value={state.email}
+                                    value={state.username}
                                     placeholder="Username"
                                     onChange={e => {
-                                        setState({...state, email: e.target.value})
+                                        setState({...state, username: e.target.value})
                                     }}
-
                                 />
                             </div>
                         </div>

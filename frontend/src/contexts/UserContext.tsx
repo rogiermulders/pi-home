@@ -3,13 +3,11 @@ import React, { useEffect, useState } from 'react'
 
 axios.defaults.baseURL = import.meta.env.VITE_APP_API
 
-const api_token = sessionStorage.getItem('api_token')
+const access_token = sessionStorage.getItem('access')
 
-if (api_token) {
+if (access_token) {
   // Set oAuth header when we have one
-  axios.defaults.headers.common['Authorization'] = 'Bearer ' + api_token
-  axios.defaults.headers.common['Allyourz-Language'] =
-    sessionStorage.getItem('locale')
+  axios.defaults.headers.common['Authorization'] = 'Bearer ' + access_token
 }
 
 interface ContextType {
