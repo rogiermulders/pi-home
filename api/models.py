@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class Choice(models.Model):
+    pin = models.IntegerField()
+    status = models.booleanField(default=False)

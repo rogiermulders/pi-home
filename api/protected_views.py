@@ -8,3 +8,8 @@ class HomeView(APIView):
     def get(self, request):
         return Response({"message": "This is a protected route"})
 
+class LightningView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        return Response({"message": "This is the lightning route"})
