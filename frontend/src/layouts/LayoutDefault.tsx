@@ -1,4 +1,4 @@
-import MtgMenu from '../components/MtgMenu.tsx'
+import MainMenu from '../components/MainMenu.tsx'
 import { Fieldset } from 'primereact/fieldset'
 import { Button } from 'primereact/button'
 
@@ -30,7 +30,7 @@ export function LayoutDefault({
   return (
     <>
       <div className="m-auto mt-1 w-4/5">
-        <MtgMenu />
+        <MainMenu />
       </div>
 
       <div className="relative m-auto mt-1 w-4/5 p-1">

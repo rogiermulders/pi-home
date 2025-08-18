@@ -6,7 +6,7 @@ import {UserContext} from '../contexts/UserContext'
 import {useNavigate, useLocation} from 'react-router'
 import type {MenuItem} from 'primereact/menuitem'
 
-export default function MtgMenu() {
+export default function MainMenu() {
     const user = useContext(UserContext)
     const navigate = useNavigate()
     const location = useLocation()
